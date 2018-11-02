@@ -5,7 +5,7 @@ MongoClient.connect(url, function(err, db) {
   if (err) throw err;
   // Laver en variabel til 
   var dbo = db.db("mydb");
-  var myobj = { name: "Jens Hansen", address: "Bondegård" };
+  var myobj = { name: "Jens Hansen", address: "Park Lane 38" };
   // Indsætter data ind i en connection. 
   dbo.collection("customers").insertOne(myobj, function(err, res) {
     if (err) throw err;
